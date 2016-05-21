@@ -18,5 +18,28 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:layout_marginRight="56dp"
-        android:background="#00FFA5" />
+        android:background="#00FFA5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMenuFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Primera" />
+
+        <TextView
+            android:id="@+id/tvMenuSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Segunda" />
+
+        <TextView
+            android:id="@+id/tvMenuMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Principal" />
+    </LinearLayout>
 </android.support.v4.widget.DrawerLayout>
