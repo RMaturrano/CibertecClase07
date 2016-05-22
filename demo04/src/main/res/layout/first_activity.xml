@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dlMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Hint" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Botón" />
+
+        <android.support.v7.widget.AppCompatButton
+            style="@style/CustomButton.Two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Botón" />
+
+        <!--<android.support.v7.widget.SwitchCompat-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="8dp"/>-->
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nvMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginRight="56dp"
+        app:itemBackground="@drawable/selector_nvmenu_backgroundcolor"
+        app:itemIconTint="@color/selector_nvmenu_iconcolor"
+        app:itemTextColor="@color/selector_nvmenu_textcolor"
+        app:menu="@menu/left_menu" />
+</android.support.v4.widget.DrawerLayout>
